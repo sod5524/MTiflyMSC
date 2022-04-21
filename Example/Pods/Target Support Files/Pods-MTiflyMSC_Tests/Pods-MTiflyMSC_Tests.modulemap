@@ -1,0 +1,6 @@
+framework module Pods_MTiflyMSC_Tests {
+  umbrella header "Pods-MTiflyMSC_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

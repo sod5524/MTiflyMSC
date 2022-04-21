@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source_files  = '**/**.framework/Headers/*.h'
 
   s.frameworks = 'AVFoundation','SystemConfiguration','Foundation','CoreTelephony','AudioToolbox','UIKit','CoreLocation','Contacts','AddressBook','QuartzCore','CoreGraphics'
-  s.library = 'z','c++','icucore'
+  s.library = 'z','c++'
 
   # s.source_files = 'MTiflyMSC/Classes/**/*'
   # s.resource_bundles = {

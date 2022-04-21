@@ -17,15 +17,15 @@ Pod::Spec.new do |s|
   s.author           = { 'apple' => 'nzusb5@163.com' }
   s.source           = { :git => 'https://github.com/sod5524/MTiflyMSC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.requires_arc = true
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios
   s.vendored_frameworks ='**/*.framework'
   s.source_files  = '**/**.framework/Headers/*.h'
 
-  s.frameworks = 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AddressBook', 'AudioToolbox', 'Contacts', 'QuartzCore', 'UIKit', 'Foundation', 'CoreGraphics'
-  s.libraries = 'z','c++'
+  s.frameworks = 'AVFoundation','SystemConfiguration','Foundation','CoreTelephony','AudioToolbox','UIKit','CoreLocation','Contacts','AddressBook','QuartzCore','CoreGraphics'
+  s.library = 'z','c++','icucore'
 
   # s.source_files = 'MTiflyMSC/Classes/**/*'
   # s.resource_bundles = {

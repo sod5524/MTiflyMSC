@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.requires_arc = true
-  s.platform     = :ios
+  s.platform     = :ios, "8.0"
   s.vendored_frameworks ='**/*.framework'
   s.source_files  = '**/**.framework/Headers/*.h'
 
-  s.frameworks = 'AVFoundation','SystemConfiguration','Foundation','CoreTelephony','AudioToolbox','UIKit','CoreLocation','Contacts','AddressBook','QuartzCore','CoreGraphics'
-  s.library = 'z','c++','icucore'
+  s.frameworks = 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AddressBook', 'AudioToolbox', 'Contacts', 'QuartzCore', 'UIKit', 'Foundation', 'CoreGraphics'
+  s.libraries = 'z','c++'
 
   # s.source_files = 'MTiflyMSC/Classes/**/*'
   # s.resource_bundles = {

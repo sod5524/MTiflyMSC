@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTiflyMSC'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '科大讯飞的SDK'
   s.description      = "科大讯飞语音听写开发包，2022.04.21"
   s.homepage         = 'https://github.com/sod5524/MTiflyMSC'
